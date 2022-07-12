@@ -1,16 +1,15 @@
 <template>
-  <TripComponent />
+  <div id="nav">
+    <router-link to="/" />
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import TripComponent from "./components/trip_component/index.vue";
 
 export default defineComponent({
   name: "App",
-  components: {
-    TripComponent,
-  },
 });
 </script>
 
